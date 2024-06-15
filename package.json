@@ -1,0 +1,12 @@
+{
+  "name": "do_type",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jeong-jaehyeon/typescript.git",
+  "author": "정재현 <wolgus104@naver.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
