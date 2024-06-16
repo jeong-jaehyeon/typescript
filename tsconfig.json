@@ -2,10 +2,47 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
+    "outDir": "./dist",
+    "moduleResolution": "Node",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "downlevelIteration": true,
     "lib": ["es6", "dom"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"] // 제외할 파일 경로
 }
+/*
+compilerOptions
+target: es6
+TypeScript 코드를 ES6(ECMAScript 2015)로 컴파일합니다. ES6 이상의 최신 JavaScript 기능을 사용할 수 있습니다.
+module: commonjs
+모듈 시스템으로 CommonJS를 사용합니다. Node.js 환경에서 사용되는 모듈 시스템입니다.
+outDir: ./dist
+컴파일된 JavaScript 파일을 저장할 디렉토리를 지정합니다. 여기서는 dist 디렉토리에 저장합니다.
+moduleResolution: Node
+모듈 해석 방법을 Node.js 방식으로 설정합니다. Node.js 모듈 해석 규칙을 따릅니다.
+rootDir: ./src
+소스 파일의 루트 디렉토리를 지정합니다. 여기서는 src 디렉토리를 루트로 설정합니다.
+baseUrl: .
+모듈 이름을 해석할 때 기본 경로를 지정합니다. 여기서는 현재 디렉토리를 기본 경로로 설정합니다.
+sourceMap: true
+컴파일된 JavaScript 파일에 소스 맵을 생성합니다. 디버깅 시 원본 TypeScript 코드를 참조할 수 있습니다.
+downlevelIteration: true
+for..of, spread 연산자 등 ES6의 반복 기능을 ES5 이하에서도 사용할 수 있게 컴파일합니다.
+lib: ["es6", "dom"]
+컴파일 시 사용할 라이브러리를 지정합니다. 여기서는 ES6와 DOM 라이브러리를 사용합니다. 이는 ES6의 기능과 브라우저의 DOM API를 사용할 수 있게 합니다.
+strict: true
+엄격한 타입 검사를 활성화합니다. TypeScript의 엄격 모드를 사용하여 더 강력한 타입 검사를 수행합니다.
+esModuleInterop: true
+CommonJS와 ES 모듈 간의 상호 운용성을 지원합니다. require를 사용하여 ES 모듈을 가져오거나, import를 사용하여 CommonJS 모듈을 가져올 때 호환성을 유지합니다.
+skipLibCheck: true
+라이브러리 파일의 타입 검사를 건너뜁니다. 컴파일 속도를 높이기 위해 사용됩니다.
+forceConsistentCasingInFileNames: true
+파일 이름의 대소문자 일관성을 강제합니다. 파일 이름의 대소문자 사용이 일치하지 않으면 오류를 발생시킵니다.
+*/

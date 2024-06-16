@@ -5,7 +5,12 @@
   "repository": "https://github.com/jeong-jaehyeon/typescript.git",
   "author": "정재현 <wolgus104@naver.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  },
   "devDependencies": {
+    "@types/node": "^20.14.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }
