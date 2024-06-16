@@ -12,7 +12,8 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"] // 제외할 파일 경로
